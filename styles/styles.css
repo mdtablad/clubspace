@@ -1,15 +1,19 @@
 /* -- // Core */
 body {
     margin: 0;
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* -- // Main Container */
 .container {
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: black;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
 }
 
 /* background */ 
@@ -22,23 +26,44 @@ body {
 
 /* wrap */ 
 .wrap {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 /* -- // Sitewide */
+/* topbar */ 
+.sitewide-topbar  {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
 /* header */ 
 .sitewide-header {
-
+    width: 50%;
+    text-align: left;
+    padding-left: 1em;
 }
 
 /* navigation */ 
 .sitewide-navigation {
-
+    width: 50%;
+    text-align: right;
+    padding-right: 1em;
 }
 
 /* footer */ 
 .sitewide-footer {
 
+}
+
+/* -- // Inner-Wrap */
+.inner-wrap {
+    width: 100%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
