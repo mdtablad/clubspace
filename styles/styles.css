@@ -1,0 +1,44 @@
+/* -- // Core */
+body {
+    margin: 0;
+}
+
+/* -- // Main Container */
+.container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+}
+
+/* background */ 
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    position: absolute;
+}
+
+/* wrap */ 
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* -- // Sitewide */
+/* header */ 
+.sitewide-header {
+
+}
+
+/* navigation */ 
+.sitewide-navigation {
+
+}
+
+/* footer */ 
+.sitewide-footer {
+
+}
