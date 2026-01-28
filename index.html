@@ -7,6 +7,7 @@
     <title>Clubspace</title>
     <!-- Link Refs -->
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/776f506411.js" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +22,11 @@
             <!-- Sitewide Topbar -->
             <div class="sitewide-topbar"> 
                 <div class="sitewide-header"> 
-                    <h3> Club Space</h3>
+                    <h3 class="cs-1"> Club </h3>
+                    <h3 class="cs-2"> Space </h3>
                 </div>
                 <div class="sitewide-navigation"> 
-                    <h3> Sign-In </h3>
+                    <button class="cs-nav-1"> Log-In </button>
                 </div>
             </div>
             <!-- Inner Wrap -->
@@ -32,7 +34,18 @@
                 <!-- Inner Wrap Content -->
                 <div class="inner-wrap-content"> 
                     <section class="cover-section"> 
-                        <h1> Find your club </h1>
+                        <div id="findText"> 
+                            <h1 class="findText1"> Find </h1>
+                            <h1 id="findText2"> your club.</h1>
+                            <h1 class="findText1"></h1>
+                        </div>
+                        <div id="findSearchArea"> 
+                            <div id="findSearchLabel"> Find your school below: </div>
+                            <div id="findSearchBox"> 
+                                <div id="findSearchIcon"><i class="fa-regular fa-school"></i></div>
+                                <input type="text" id="findSearchSchool" name="school" placeholder="Enter your school name"> 
+                            </div>
+                        </div>
                     </section>
                     <section class="facts-section">
                         

@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+input, textarea, button, select {
+    font-family: 'Poppins', 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* -- // Main Container */
 .container {
     margin: 0;
@@ -34,25 +38,59 @@ body {
 /* -- // Sitewide */
 /* topbar */ 
 .sitewide-topbar  {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.479) 15%, rgba(0, 0, 0, 0) 100%);
 }
 
 /* header */ 
 .sitewide-header {
     width: 50%;
     text-align: left;
-    padding-left: 1em;
+    padding-left: 2.67em;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
 }
 
+.cs-1 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.cs-2 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding-left: 0.05em;
+}
+ 
 /* navigation */ 
 .sitewide-navigation {
     width: 50%;
     text-align: right;
-    padding-right: 1em;
+    padding-right: 2.67em;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.cs-nav-1 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
 }
 
 /* footer */ 
@@ -60,10 +98,107 @@ body {
 
 }
 
-/* -- // Inner-Wrap */
+/* -- // Wrap */
+/* inner-wrap */
 .inner-wrap {
     width: 100%;
     height: auto;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin-left: 1em; 
+    margin-right: 1em;
+}
+
+/* inner-wrap-content */ 
+.inner-wrap-content {
+    width: 100%;
+    height: auto;
+}
+
+/* -- // Sections */
+/* cover-section */
+.cover-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: rgba(132, 192, 212, 0);
+    scroll-snap-align: start;
+    padding-left: 5em;
+}
+
+#findText {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+}
+
+.findText1 {
+    font-size: 75px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#findText2 {
+    font-size: 90px;
+    margin: 0;
+    margin-top: -0.35em;
+    margin-bottom: 0.1em;
+    font-weight: 800;
+}
+
+#findSearchArea {
+    position: relative;
+    width: 25em;
+    height: auto;
+    align-items: center;
+    margin-top: 2.8em;
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#findSearchLabel {
+    width: 100%;
+    text-align: left;
+    padding-left: 0.1em;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+
+#findSearchBox {
+    background-color: white;
+    width: 100%;
+    height: 3em;
+    position: relative;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.2em;
+    padding-top: 0.1em;
+}
+
+#findSearchIcon {
+    margin: 0;
+    width: 10%;
+    height: auto;
+    font-size: 31px; 
+}
+
+#findSearchSchool {
+    border: none;
+    margin: 0;
+    width: 85%;
+    height: 90%;
+    background-color: rgba(0,0,0,0);
+    padding-left: 0.5em;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+#findSearchSchool:focus {
+    outline: none;
 }
