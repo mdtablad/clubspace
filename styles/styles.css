@@ -177,8 +177,10 @@ input, textarea, button, select {
     border-radius: 0.25em;
     display: flex;
     flex-direction: row;
-    padding-left: 0.2em;
-    padding-top: 0.1em;
+    padding-left: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
+    box-shadow: 6px 7px 10px 2px rgba(99, 99, 99, 0.699);
 }
 
 #findSearchIcon {
@@ -186,6 +188,7 @@ input, textarea, button, select {
     width: 10%;
     height: auto;
     font-size: 31px; 
+    color: rgb(94, 87, 87);
 }
 
 #findSearchSchool {
@@ -194,7 +197,7 @@ input, textarea, button, select {
     width: 85%;
     height: 90%;
     background-color: rgba(0,0,0,0);
-    padding-left: 0.5em;
+    padding-left: 0.6em;
     font-size: 20px;
     font-weight: 550;
 }
