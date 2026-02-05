@@ -74,6 +74,11 @@ input, textarea, button, select {
     letter-spacing: 0.1em;
     padding-left: 0.05em;
 }
+
+.cs-btn {
+    text-decoration: none;
+    color: white;
+}
  
 /* navigation */ 
 .sitewide-navigation {
