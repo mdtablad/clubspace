@@ -11,6 +11,10 @@ input, textarea, button, select {
     font-family: 'Poppins', 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /* -- // Main Container */
 .container {
     margin: 0;
