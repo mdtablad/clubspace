@@ -1,5 +1,6 @@
 /* -- // Core */
 body {
+    user-select: none;
     margin: 0;
     color: white;
     background-color: black;
@@ -38,6 +39,7 @@ input, textarea, button, select {
 /* -- // Sitewide */
 /* topbar */ 
 .sitewide-topbar  {
+    z-index: 10;
     position: absolute;
     display: flex;
     flex-direction: row;
