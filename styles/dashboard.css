@@ -1,0 +1,272 @@
+/* -- // TopBar */
+/*dashboard-nav-island*/
+.dashboard-nav-island {
+    background-color: rgba(196, 196, 196, 0.4);
+    border-radius: 20px;
+    width: 12em;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    filter: blur();
+    box-shadow: 0px 0px 10px 2px rgba(99, 99, 99, 0.699);
+}
+
+.dni-button {
+    background-color: rgba(44, 44, 44, 0.25);
+    width: 49%;
+    height: 90%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 300;
+    filter: blur();
+}
+
+.dni-selected {
+    background-color: rgba(25, 25, 25, 0.6);
+    font-weight: 500;
+}
+
+
+/* -- // Sections */
+/* dashboard-section */
+.dashboard-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(132, 192, 212, 0);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+/* clubs-section */
+.clubs-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(38, 38, 38);
+    overflow-y: auto;
+}
+
+/* beginning-cover */
+.beginning-cover {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    background-color: rgb(134, 134, 134);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: 
+        linear-gradient(to top, rgba(38, 38, 38, 0),rgb(134, 134, 134) 60%);
+}
+
+.cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: 
+        linear-gradient(to top, rgba(38, 38, 38, 0),rgb(134, 134, 134) 60%);
+}
+
+.cover-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.cover-info {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    padding-top: 8em;
+    padding-left: 4em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.bc-header {
+    font-size: 80px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.bc-subHeader {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.cover-cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.373);
+    background: linear-gradient(to top, rgb(38 38 38), rgba(38, 38, 38, 0) 100%);
+}
+
+/* clubs-content */
+.clubs-content {
+    padding-top: 2em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4em;
+    position: relative;
+}
+
+.club-list {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 4em;
+    padding-right: 4em;
+    gap: 2.5em;
+}
+
+.club-button {
+    background-color: grey;
+    width: 20em;
+    height: 11.5em;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 0px 10px 2px rgba(99, 99, 99, 0.699);
+}
+
+.cb-cover { 
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    /*height: 53%;
+    width: 100%;*/
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cb-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(112, 108, 108, 0);
+    height: 47%;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    background: 
+        linear-gradient(to top, rgb(86, 86, 86, 1) 40%, rgb(134, 134, 134, 0) 100%);
+}
+
+.cb-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0; 
+    padding-left: 1em;
+    width: 65%;
+    height: 100%;
+    margin-top: -1em;
+}
+
+.cb-title {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+    width: 80%;
+}
+
+.cb-subTitle {
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0; 
+    width: 100%;
+    margin-top: -0.2em;
+    padding-left: 0.2em;
+}
+
+.cb-btm-right {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cb-icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(43, 43, 43, 0.4);
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 2.5em;
+    margin-right: 2em;
+    box-shadow: 6px 7px 10px 2px rgba(99, 99, 99, 0.699);
+    filter: blur()
+}
+
+.cb-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; 
+    bottom: 0; 
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cb-opt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.301);
+    border: 2px solid rgba(255, 255, 255, 0.353);
+    visibility: hidden;
+}
