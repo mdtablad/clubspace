@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom Meta Tags -->
-    <title>Clubspace</title>
+    <title>ClubSpace - Explore</title>
     <!-- Link Refs -->
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/dashboard.css">
     <script src="https://kit.fontawesome.com/776f506411.js" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +32,13 @@
                 </div>
                 <div class="sitewide-navigation"> 
                     <div class="dashboard-nav-island"> 
-                        <div class="dni-button dni-selected pointer"> My Clubs </div>
-                        <div class="dni-button pointer"> Explore </div>
+                        <a href="/nav/dashboard/clubs.html" class="dni-btn">
+                            <div class="dni-button pointer"> My Clubs </div>
+                        </a>
+
+                        <a href="/nav/dashboard/explore.html" class="dni-btn">
+                            <div class="dni-button dni-selected pointer"> Explore </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -49,12 +54,33 @@
                                 </div>
                                 <div class="cover-cover"> </div>
                                 <div class="cover-info"> 
-                                    <h3 class="bc-header"> My Clubs </h3>
+                                    <h3 class="bc-header"> Explore Clubs </h3>
                                     <h4 class="bc-subHeader"> @ Waipahu High School </h4>
                                 </div>
                                 
                             </div>
+
                             <div class="clubs-content"> 
+                                <div class="clubs-filter"> 
+                                    <div class="cf-search"> 
+                                        <i class="fa-solid fa-magnifying-glass" id="findSearchClubIcon"></i>
+                                        <input type="text" id="findSearchClub" name="club" placeholder="Search.."> 
+                                    </div>
+                                    <div class="cf-filters"> 
+                                        <select name="categories" id="cf-categories">
+                                            <option value="all" selected>All Categories</option>
+                                            <option value="academics">Academics</option>
+                                            <option value="stem">STEM & Technology</option>
+                                            <option value="arts">Arts & Performing Arts</option>
+                                            <option value="community">Community Service & Leadership</option>
+                                            <option value="career">Career & Business</option>
+                                            <option value="cultural">Cultural & Language</option>
+                                            <option value="hobbies">Hobbies & Interests</option>
+                                            <option value="media">Media & Publications</option>
+                                            <option value="debate">Debate & Political Science</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="club-list"> 
                                     <div class="club-button"> 
                                         <div class="cb-cover"> </div>

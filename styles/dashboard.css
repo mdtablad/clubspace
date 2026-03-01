@@ -19,10 +19,19 @@
     box-shadow: 0px 0px 10px 2px rgba(99, 99, 99, 0.699);
 }
 
-.dni-button {
-    background-color: rgba(44, 44, 44, 0.25);
+.dni-btn {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits color from parent or default */
+    cursor: pointer; /* Changes the cursor to a hand icon on hover */
+    display: block; /* Ensures the anchor tag takes up the full width/height of its container */
     width: 49%;
     height: 90%;
+}
+
+.dni-button {
+    background-color: rgba(44, 44, 44, 0.25);
+    width: 100%;
+    height: 100%;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -140,13 +149,74 @@
 
 /* clubs-content */
 .clubs-content {
-    padding-top: 2em;
+    padding-top: 0em;
     width: 100%;
     height: auto;
     margin-bottom: 4em;
     position: relative;
 }
 
+/* clubs-filter */
+.clubs-filter {
+    width: auto;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding-left: 4em;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.cf-search {
+    width: 16em;
+    height: 2.5em;
+    background-color: rgba(255, 255, 255, 0.777);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+    color: white;
+}
+
+#findSearchClubIcon {
+    font-size: 21px; 
+    color: rgb(94, 87, 87);
+}
+
+#findSearchClub {
+    border: none;
+    margin: 0;
+    width: 85%;
+    height: 90%;
+    background-color: rgba(0,0,0,0);
+    padding-left: 0.5em;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.cf-filters {
+    width: fit-content;
+    height: 2.5em;
+    background-color: rgba(255, 255, 255, 0.777);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+}
+
+#cf-categories {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: fit-content;
+    font-size: 16px;
+}
+
+/* club-list */
 .club-list {
     width: auto;
     height: 100%;
