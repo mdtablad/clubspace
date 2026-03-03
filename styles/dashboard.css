@@ -29,7 +29,7 @@
 }
 
 .dni-button {
-    background-color: rgba(44, 44, 44, 0.25);
+    background-color: rgba(44, 44, 44, 0.162);
     width: 100%;
     height: 100%;
     position: relative;
@@ -135,6 +135,8 @@
     font-weight: 300;
     margin: 0;
     letter-spacing: 0.1em;
+    text-decoration: none;
+    color: white;
 }
 
 .cover-cover {
