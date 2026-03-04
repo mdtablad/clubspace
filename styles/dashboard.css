@@ -29,7 +29,7 @@
 }
 
 .dni-button {
-    background-color: rgba(44, 44, 44, 0.162);
+    background-color: rgba(44, 44, 44, 0.1);
     width: 100%;
     height: 100%;
     position: relative;
@@ -48,6 +48,19 @@
     font-weight: 500;
 }
 
+.dashboard-settings-button {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.4em;
+}
+
+.dashboard-settings-btn {
+    text-decoration: none;
+    color: rgb(243, 240, 240);
+}
 
 /* -- // Sections */
 /* dashboard-section */
