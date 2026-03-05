@@ -3,7 +3,7 @@
 .dashboard-nav-island {
     background-color: rgba(196, 196, 196, 0.4);
     border-radius: 20px;
-    width: 12em;
+    width: auto;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -24,8 +24,11 @@
     color: inherit; /* Inherits color from parent or default */
     cursor: pointer; /* Changes the cursor to a hand icon on hover */
     display: block; /* Ensures the anchor tag takes up the full width/height of its container */
-    width: 49%;
+    width: fit-content;
     height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dni-button {
@@ -41,6 +44,8 @@
     font-size: 15px;
     font-weight: 300;
     filter: blur();
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .dni-selected {
