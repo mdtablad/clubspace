@@ -88,6 +88,13 @@
     /* padding-right: 2.67em; */
 }
 
+.club-page-logo {
+    width: 10em;
+    height: auto;
+    position: absolute;
+    bottom: 1;
+}
+
 /* club-overview */
 .club-overview {
     width: inherit;
@@ -106,10 +113,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1em;
+    gap: 2.2em;
     border-radius: 10px;
     padding-left: 2.67em;
-    padding-top: 1.2em;
+    padding-top: 0em;
 }
 
 .announcement-wgt {
@@ -346,7 +353,7 @@
     border-radius: 10px;
     padding-left: 2.5em;
     padding-right: 2.67em;
-    padding-top: 1.2em;
+    padding-top: 0em;
 }
 
 .task-wgt {
