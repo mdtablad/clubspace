@@ -1,0 +1,219 @@
+.settings-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(132, 192, 212, 0);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+#settings-window {
+    position: relative;
+    width: 50em;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0px 0px 20px 15px rgba(53, 53, 53, 0.699);
+    padding: 2em;
+    background-color: rgba(42, 40, 40, 0.658); 
+    display: flex; 
+    flex-direction: column;
+    margin-top: 6em;
+    overflow-y: auto;
+}
+
+.settings-top {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.settings-top-left {
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.settings-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin: 0em;
+}
+
+.settings-subHeader {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin: 0em;
+}
+
+.settings-top-right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.settings-icon {
+    width: 6.7em;
+    height: 6.7em;
+    margin-right: 0.5em;
+}
+
+.settings-bottom {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.settings-category {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.settings-category-header {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: white;
+    margin: 0em;
+    padding-bottom: 0.67em;
+    padding-top: 1em;
+}
+
+.settings-category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.settings-option { 
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.settings-option-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.settings-option-header {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    margin: 0em;
+    text-align: left;
+    width: 100%;
+}
+
+.settings-option-desc {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    margin: 0em;
+    text-align: left;
+    width: 100%
+}
+
+.settings-option-right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.settings-option-selection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5em;
+}
+
+.settings-option-dropdown {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    text-indent: 0.6em;
+    border-radius: 8px;
+}
+
+.settings-option-input {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    text-indent: 0.6em;
+    border-radius: 8px;
+}
+
+.settings-option-selection-file {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.settings-option-file {
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
