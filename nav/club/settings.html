@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom Meta Tags -->
-    <title>Settings</title>
+    <title>Club - Settings</title>
     <link rel="icon" type="image/x-icon" href="../public/assets/clubspace-watermark.ico">
     <!-- Link Refs -->
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/settings.css">
-    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/login.css">
+    <link rel="stylesheet" href="../../styles/settings.css">
+    <link rel="stylesheet" href="../../styles/dashboard.css">
     <script src="https://kit.fontawesome.com/776f506411.js" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
                     </a>
                 </div>
                 <div class="sitewide-navigation"> 
-                    <a href="../nav/dashboard/clubs.html" class="dashboard-settings-btn pointer">
+                    <a href="../club/view.html" class="dashboard-settings-btn pointer">
                         <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
                     </a>
                 </div>
@@ -49,7 +49,7 @@
                             <div class="settings-top">
                                 <div class="settings-top-left">  
                                     <h2 class="settings-header">Settings</h2>
-                                    <h4 class="settings-subHeader"></h4>
+                                    <h4 class="settings-subHeader">Club Name</h4>
                                 </div>
                                 <div class="settings-top-right"> 
                                     <img src="https://www.waipahuhigh.org/ourpages/auto/2023/5/15/59713595/WHS%20LOGO.png" alt="Settings Icon" class="settings-icon">  
@@ -78,12 +78,23 @@
                                         </div>
                                     </div>
                                     <div class="settings-category"> 
-                                        <h3 class="settings-category-header"> Account </h3>
-                                        <div class="settings-category-list">
+                                        <h3 class="settings-category-header"> Club </h3>
+                                        <div class="settings-category-list"> 
                                             <div class="settings-option"> 
                                                 <div class="settings-option-left">
-                                                    <h3 class="settings-option-header">Profile Icon</h3>
-                                                    <h4 class="settings-option-desc">Change your profile icon inside ClubSpace.</h4>
+                                                    <h3 class="settings-option-header">Name</h3>
+                                                    <h4 class="settings-option-desc">Change the name of your club.</h4>
+                                                </div>
+                                                <div class="settings-option-right">
+                                                    <div class="settings-option-selection"> 
+                                                        <input type="text" class="settings-option-input" name="club-name" placeholder="Club Name"> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="settings-option"> 
+                                                <div class="settings-option-left">
+                                                    <h3 class="settings-option-header">Icon</h3>
+                                                    <h4 class="settings-option-desc">Change your icon of your club.</h4>
                                                 </div>
                                                 <div class="settings-option-right">
                                                     <div class="settings-option-selection-file"> 
@@ -93,34 +104,63 @@
                                             </div>
                                             <div class="settings-option"> 
                                                 <div class="settings-option-left">
-                                                    <h3 class="settings-option-header">Email</h3>
-                                                    <h4 class="settings-option-desc">Change your email inside ClubSpace.</h4>
+                                                    <h3 class="settings-option-header">Owner</h3>
+                                                    <h4 class="settings-option-desc">Change the owner of your club.</h4>
                                                 </div>
                                                 <div class="settings-option-right">
                                                     <div class="settings-option-selection"> 
-                                                        <input type="text" class="settings-option-input" name="email" placeholder="Email"> 
+                                                        <input type="text" class="settings-option-input" name="club-owner" placeholder="Club Owner"> 
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="settings-option"> 
                                                 <div class="settings-option-left">
-                                                    <h3 class="settings-option-header">Password</h3>
-                                                    <h4 class="settings-option-desc">Change your password inside ClubSpace.</h4>
+                                                    <h3 class="settings-option-header">Topic</h3>
+                                                    <h4 class="settings-option-desc">Change the topic of your club.</h4>
                                                 </div>
                                                 <div class="settings-option-right">
                                                     <div class="settings-option-selection"> 
-                                                        <input type="text" class="settings-option-input" name="password" placeholder="Password"> 
+                                                        <select name="topic" id="topic-select" class="settings-option-dropdown">
+                                                            <option value="all" selected>All Categories</option>
+                                                            <option value="academics">Academics</option>
+                                                            <option value="stem">STEM & Technology</option>
+                                                            <option value="arts">Arts & Performing Arts</option>
+                                                            <option value="community">Community Service & Leadership</option>
+                                                            <option value="career">Career & Business</option>
+                                                            <option value="cultural">Cultural & Language</option>
+                                                            <option value="hobbies">Hobbies & Interests</option>
+                                                            <option value="media">Media & Publications</option>
+                                                            <option value="debate">Debate & Political Science</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="settings-option"> 
                                                 <div class="settings-option-left">
-                                                    <h3 class="settings-option-header">Institution</h3>
-                                                    <h4 class="settings-option-desc">Change your institution inside ClubSpace.</h4>
+                                                    <h3 class="settings-option-header">Visibility</h3>
+                                                    <h4 class="settings-option-desc">Change the visibility of your club.</h4>
                                                 </div>
                                                 <div class="settings-option-right">
                                                     <div class="settings-option-selection"> 
-                                                        <input type="text" class="settings-option-input" name="institution" placeholder="Institution"> 
+                                                        <select name="visibility" id="visibility-select" class="settings-option-dropdown">
+                                                            <option value="public">Public</option>
+                                                            <option value="private">Private</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="settings-option"> 
+                                                <div class="settings-option-left">
+                                                    <h3 class="settings-option-header">Join Process</h3>
+                                                    <h4 class="settings-option-desc">Change the join process for your club.</h4>
+                                                </div>
+                                                <div class="settings-option-right">
+                                                    <div class="settings-option-selection"> 
+                                                        <select name="join_process" id="join-process-select" class="settings-option-dropdown">
+                                                            <option value="instant">Instant</option>
+                                                            <option value="request">Request</option>
+                                                            <option value="form">Form</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>

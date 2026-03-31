@@ -108,7 +108,7 @@
 
 .settings-category-header {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 0.05em;
     color: white;
     margin: 0em;
@@ -189,6 +189,10 @@
     border: none;
     text-indent: 0.6em;
     border-radius: 8px;
+}
+
+option {
+    color: black;
 }
 
 .settings-option-input {
