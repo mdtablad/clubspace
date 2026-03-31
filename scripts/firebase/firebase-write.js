@@ -1,5 +1,5 @@
 
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-database.js";
 
 const database = getDatabase();
 

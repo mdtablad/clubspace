@@ -1,5 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-database.js";
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
