@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom Meta Tags -->
-    <title>Explore</title>
+    <title>Preview</title>
     <link rel="icon" type="image/x-icon" href="../../public/assets/clubspace-watermark.ico">
     <!-- Link Refs -->
     <link rel="stylesheet" href="../../styles/styles.css">
@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script type="module" src="../../scripts/firebase/firebase.js"></script>
+    <script type="module" src="../../scripts/firebase/firebase-read.js"></script>
+    <script type="module" src="../../scripts/firebase/firebase-write.js"></script>
 </head>
 <body>
     <!-- // Container \\ -->
@@ -36,7 +40,7 @@
                         <a href="../dashboard/clubs.html" class="dni-btn">
                             <div class="dni-button pointer"> My Clubs </div>
                         </a>
-
+                        
                         <a href="../dashboard/explore.html" class="dni-btn">
                             <div class="dni-button dni-selected pointer"> Explore </div>
                         </a>
@@ -53,6 +57,7 @@
                 <!-- Inner Wrap Content -->
                 <div class="inner-wrap-content"> 
                     <section class="dashboard-section"> 
+                        <div class="club-page-cover-cover"> </div>
                         <section class="clubs-section">
                             <div class="beginning-cover"> 
                                 <div class="cover-image">
@@ -60,58 +65,38 @@
                                 </div>
                                 <div class="cover-cover"> </div>
                                 <div class="cover-info"> 
-                                    <h3 class="bc-header"> Explore Clubs </h3>
+                                    <h3 class="bc-header"> Club Name </h3>
                                     <a href="" class="bc-subHeader"> @ Waipahu High School </a> 
                                 </div>
                                 
                             </div>
-
                             <div class="clubs-content"> 
-                                <div class="clubs-filter"> 
-                                    <div class="cf-search"> 
-                                        <i class="fa-solid fa-magnifying-glass" id="findSearchClubIcon"></i>
-                                        <input type="text" id="findSearchClub" name="club" placeholder="Search.."> 
-                                    </div>
-                                    <div class="cf-filters"> 
-                                        <select name="categories" id="cf-categories">
-                                            <option value="all" selected>All Categories</option>
-                                            <option value="academics">Academics</option>
-                                            <option value="stem">STEM & Technology</option>
-                                            <option value="arts">Arts & Performing Arts</option>
-                                            <option value="community">Community Service & Leadership</option>
-                                            <option value="career">Career & Business</option>
-                                            <option value="cultural">Cultural & Language</option>
-                                            <option value="hobbies">Hobbies & Interests</option>
-                                            <option value="media">Media & Publications</option>
-                                            <option value="debate">Debate & Political Science</option>
-                                        </select>
+                                <div class="clubs-content-header"> 
+                                    <div class="cch-header-join-btn"> 
+                                        <i class="fa-solid fa-right-to-bracket cch-header-join-btn-icon"></i>
+                                        <a href="../club/view.html" class="cch-header-join-link"> Join Club </a>
                                     </div>
                                 </div>
-                                <div class="club-list">  
-                                    <div class="club-button"> 
-                                        <div class="cb-cover"> 
-                                            <img class="cb-cover-img" src="../../public/bgs/waipahuHS-WBlding-wrnsStudio.jpg"> 
-                                            <div class="cb-top"> </div>
+                                <div class="clubs-content-bottom">
+                                    <div class="clubs-content-information"> 
+                                        <div class="clubs-content-desc"> 
+                                            <h3 class="cci-header"> Club Description </h3>
+                                            <p class="cci-description"> This is the  description for the club. </p>
                                         </div>
-                                        
-                                        <div class="cb-bottom"> 
-                                            <div class="cb-info"> 
-                                                <div class="cb-title"> Club Name </div>
-                                                <div class="cb-subTitle"> 50 Members </div>
-                                            </div>
-                                            <div class="cb-btm-right"> 
-                                                <div class="cb-icon"> 
-                                                    <img class="cb-icon-src" src="https://www.waipahuhigh.org/ourpages/auto/2023/5/15/59713595/WHS%20LOGO.png"> 
-                                                </div>
-                                            </div>
+
+                                    </div>
+                                    <div class="club-highlights"> 
+                                        <div class="clubs-content-stats"> 
+                                            <h4 class="clubs-content-stats-stat"> Member Count: 25 </h4>
+                                            <h4 class="clubs-content-stats-stat"> Owner: John Doe </h4>
+                                            <h4 class="clubs-content-stats-stat"> Created: XX/XX/XX </h4>
                                         </div>
-                                        <a href="../dashboard/preview.html" class="cb-btn pointer"> </a>
-                                        <div class="cb-opt pointer"> </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
                     </section>
+                    <img class="club-page-logo" src="https://www.waipahuhigh.org/ourpages/auto/2023/5/15/59713595/WHS%20LOGO.png">
                 </div>
             </div>
             <!-- Sitewide Footer -->

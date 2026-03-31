@@ -147,6 +147,7 @@
     font-size: 80px;
     font-weight: 500;
     margin: 0;
+      z-index: 1;
 }
 
 .bc-subHeader {
@@ -156,6 +157,7 @@
     letter-spacing: 0.1em;
     text-decoration: none;
     color: white;
+      z-index: 1;
 }
 
 .cover-cover {
@@ -333,6 +335,7 @@
     width: 65%;
     height: 100%;
     margin-top: -1em;
+    
 }
 
 .cb-title {
@@ -399,4 +402,148 @@
     background-color: rgba(0, 0, 0, 0.301);
     border: 2px solid rgba(255, 255, 255, 0.353);
     visibility: hidden;
+}
+
+.clubs-content-header {
+    width: auto;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding-left: 4em;
+    position: relative;
+    padding-bottom: 2em;
+      z-index: 1;
+}
+
+.cch-header-join-btn {
+    width: auto;
+    height: 2.5em;
+    background-color: rgba(99, 99, 99, 0.699);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1.2em;
+    color: white;
+}
+
+.cch-header-join-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cch-header-join-btn-icon {
+    font-size: 21px; 
+    color: rgb(255, 255, 255);
+    margin-right: 0.5em;
+}
+
+.clubs-content-bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    z-index: 1;
+
+}
+.clubs-content-information {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    background-color: rgba(99, 99, 99, 0.699);
+    margin-left: 4em;
+    border-radius: 8px;
+      z-index: 1;
+}
+
+.clubs-content-desc {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4em;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+      z-index: 1;
+}
+
+.cci-header {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    align-self: flex-start;
+
+    text-align: left;
+    width: 100%;
+}
+
+.cci-description {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    align-self: flex-start;
+    padding-left: 1em;
+    text-align: left;
+    width: 100%;
+}
+
+.club-highlights {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    background-color: rgba(0, 0, 0, 0);
+      z-index: 1;
+}
+
+.clubs-content-stats {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.clubs-content-stats-stat {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.club-page-logo {
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    bottom: -1em;
+    right: 3.5em;
+}
+
+.club-page-cover-cover {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.373);
+    background: linear-gradient(to top, rgb(38 38 38), rgba(38, 38, 38, 0) 100%);
 }
