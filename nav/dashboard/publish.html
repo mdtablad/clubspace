@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Meta Tags -->
+    <title>Club - Publish</title>
+    <link rel="icon" type="image/x-icon" href="../../public/assets/clubspace-watermark.ico">
+    <!-- Link Refs -->
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/dashboard.css">
+    <link rel="stylesheet" href="../../styles/club.css">
+    <script src="https://kit.fontawesome.com/776f506411.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script type="module" src="../../scripts/firebase/firebase.js"></script>
+    <script type="module" src="../../scripts/firebase/firebase-read.js"></script>
+    <script type="module" src="../../scripts/firebase/firebase-write.js"></script>
+    <script type="module" src="../../scripts/firebase/createClub.js"></script>
+</head>
+<body>
+    <!-- // Container \\ -->
+    <div class="container"> 
+        <div class="background"></div>
+        <!-- Container Wrapper -->
+        <div class="wrap">
+            <!-- Sitewide Topbar -->
+            <div class="sitewide-topbar"> 
+                <div class="club-page-header"> 
+                    <a href="../../nav/club/view.html" class="cs-btn">
+                        <h3 class="cs-1 cph1"> Club Name </h3>
+                    </a>
+                    <a href="../../nav/club/view.html" class="cs-btn">
+                        <h3 class="cs-2 cph2 bc-subHeader"> @ Waipahu High School </h3>
+                    </a>
+                </div>
+                <div class="sitewide-navigation"> 
+                    <div class="club-page-nav-island"> 
+                        <a href="../club/view.html" class="dni-btn">
+                            <div class="dni-button pointer"> Club </div>
+                        </a>
+
+                        <a href="../club/calendar.html" class="dni-btn">
+                            <div class="dni-button pointer"> Calendar </div>
+                        </a>
+
+                        <a href="../club/about.html" class="dni-btn">
+                            <div class="dni-button pointer"> About </div>
+                        </a>
+                    </div>
+                    <div class="dashboard-settings-button"> 
+                        <a href="" class="dashboard-settings-btn pointer">
+                            <i class="fa-regular fa-message fa-xl"></i>
+                        </a>
+                    </div>
+                    <div class="dashboard-settings-button"> 
+                        <a href="../club/settings.html" class="dashboard-settings-btn pointer">
+                            <i class="fa-solid fa-user-gear fa-xl"></i>
+                        </a>
+                    </div>
+                    <div class="dashboard-settings-button"> 
+                        <a href="../dashboard/clubs.html" class="dashboard-settings-btn pointer">
+                            <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Inner Wrap -->
+            <div class="inner-wrap"> 
+                <!-- Inner Wrap Content -->
+                <div class="inner-wrap-content"> 
+                    <section class="club-section">
+                        <img class="club-page-cover-img" src="../../public/bgs/waipahuHS-WBlding-wrnsStudio.jpg"> 
+                        <div class="club-page-cover-cover"> </div>
+                        <div class="club-page-cover-cover-cover"> </div>
+                        
+                        <div class="club-page">
+                            <img href="">
+                            <div class="club-task">
+                                <div class="task-center">
+                                    <div class="task-widget"> 
+                                        <div class="task-widget-top"> 
+                                            <div class="task-top-left">
+                                                <h2 class="task-header"> Create & Publish </h2>
+                                                <h2 class="task-subHeader"> Club </h2>
+                                            </div>
+                                            <div class="task-top-right">
+                                                <h4 class="task-due"> @ Waipahu High School </h4>
+                                                <button class="task-submit" id="create-club-btn"> Publish </button>
+                                            </div>
+                                        </div>
+                                        <div class="task-middle"> 
+                                            <div class="post-middle"> 
+                                                <div class="post-field"> 
+                                                    <h4 class="post-field-header">Club Name </h4>
+                                                    <input class="post-field-input" type="text" placeholder="Club">
+                                                </div>
+
+                                                <div class="post-field"> 
+                                                    <h4 class="post-field-header">Club Institution </h4>
+                                                    <input class="post-field-input" type="text" placeholder="Club Institution (e.g. Waipahu High School)">
+                                                </div>
+
+                                                <div class="post-field"> 
+                                                    <h4 class="post-field-header">Club Description </h4>
+                                                    <input class="post-field-input" type="text" placeholder="Club Description (copy and paste)">
+                                                </div>
+
+                                                <div class="post-field"> 
+                                                    <h4 class="post-field-header">Club Icon </h4>
+                                                    <input type="file" class="post-field-input" name="date input">
+                                                </div>
+
+                                                <div class="post-field"> 
+                                                    <h4 class="post-field-header">Club Topic </h4>
+                                                    <input class="post-field-input" type="text" placeholder="Club Topic (e.g. STEM, Arts, etc.)">
+                                                </div>
+
+                                                <div class="post-field"> 
+                                                    <h4 class="post-field-header">Club Visibility </h4>
+                                                    <input class="post-field-input" type="text" placeholder="Club Visibility (Public, Private)">
+                                                </div>
+
+                                                <div class="post-field"> 
+                                                    <h4 class="post-field-header">Club Join Process </h4>
+                                                    <input class="post-field-input" type="text" placeholder="Club Join Process (Approval, Instant, etc.)">
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="task-bottom"> 
+                                            <div class="task-bottom-left"> 
+                                                <h4 class="task-bottom-left-club"></h4>
+                                            </div> 
+                                            <div class="task-bottom-right"> 
+                                                <h4 class="task-bottom-right-posted"></h4>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img class="club-page-logo" src="https://www.waipahuhigh.org/ourpages/auto/2023/5/15/59713595/WHS%20LOGO.png">  
+                    </section>
+                </div>
+            </div>
+            <!-- Sitewide Footer -->
+            <div class="sitewide-footer"> </div>
+        </div>
+    </div>
+</body>
+</html>
